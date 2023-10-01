@@ -1,0 +1,93 @@
+* {
+  color: #f1efef;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(7, 133, 80);
+  background: linear-gradient(180deg, #12486b 0%, #419197 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  min-height: 100vh;
+}
+header nav {
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #12486b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+header nav .nav-logo {
+  margin-left: 20px;
+}
+header nav .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .nav-item a {
+  padding: 24px 20px;
+}
+header nav .nav-item a:hover {
+  background-color: #1aacac;
+  color: #f1efef;
+  border-radius: 12px;
+}
+header .hero {
+  width: 100%;
+  margin-inline: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .hero .hero-item {
+  flex: 1;
+}
+header .hero .teks-1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+header .hero .teks-1 span {
+  background-image: linear-gradient(to right, #1aacac, #79ac78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+}
+header .hero .teks-2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+header .hero .img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hero .img-container .blob {
+  position: absolute;
+  width: 130%;
+  z-index: -1;
+}/*# sourceMappingURL=styles.css.map */

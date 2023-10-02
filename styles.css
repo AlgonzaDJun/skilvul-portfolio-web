@@ -79,6 +79,15 @@ header .hero .teks-2 {
   font-size: 40px;
   font-weight: 700;
 }
+header .hero .teks-2 span {
+  background-image: linear-gradient(to right, #79ac78, #1aacac);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+}
 header .hero .img-container {
   position: relative;
   width: 100%;
@@ -88,6 +97,46 @@ header .hero .img-container {
 }
 header .hero .img-container .blob {
   position: absolute;
-  width: 130%;
+  width: 120%;
   z-index: -1;
+}
+header .hero .img-container .profile-picture {
+  margin-top: -170px;
+  z-index: -1;
+}
+
+section#about {
+  margin-inline: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+section#about div {
+  flex: 1;
+}
+section#about .teks {
+  text-align: right;
+  margin-left: 300px;
+}
+section#about .teks h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+section#about .teks p {
+  margin-top: 20px;
+}
+section#about .teks span {
+  background-image: linear-gradient(to right, #79ac78, #1aacac);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+}
+section#about .image {
+  margin-left: 40px;
+}
+section#about .image img {
+  border-radius: 40px;
 }/*# sourceMappingURL=styles.css.map */

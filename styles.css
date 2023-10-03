@@ -23,7 +23,6 @@ body {
 
 header {
   display: flex;
-  min-height: 100vh;
 }
 header nav {
   overflow: hidden;
@@ -53,6 +52,7 @@ header nav .nav-item a:hover {
   border-radius: 12px;
 }
 header .hero {
+  min-height: 100vh;
   width: 100%;
   margin-inline: 50px;
   display: flex;
@@ -121,13 +121,16 @@ section#about .teks {
   margin-left: 300px;
 }
 section#about .teks h1 {
+  margin-top: 100px;
+  margin-bottom: 40px;
   font-size: 40px;
   font-weight: bold;
+  text-decoration: underline;
 }
 section#about .teks p {
+  line-height: 32px;
   margin-top: 20px;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 25px;
 }
 section#about .teks span {
   background-image: linear-gradient(to right, #79ac78, #1aacac);
@@ -135,6 +138,23 @@ section#about .teks span {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 30px;
+}
+section#about .teks .tech-wrapper {
+  text-align: left;
+  margin: 30px 30px;
+}
+section#about .teks .tech-wrapper h2 {
+  font-size: 28px;
+  margin: 28px 0;
+  display: block;
+}
+section#about .teks .tech-wrapper .tech-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #2e97a7;
+  padding: 12px;
+  border-radius: 16px;
 }
 section#about .image {
   margin-left: 40px;

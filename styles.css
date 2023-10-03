@@ -126,6 +126,8 @@ section#about .teks h1 {
 }
 section#about .teks p {
   margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
 }
 section#about .teks span {
   background-image: linear-gradient(to right, #79ac78, #1aacac);

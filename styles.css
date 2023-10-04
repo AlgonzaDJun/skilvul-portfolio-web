@@ -161,4 +161,52 @@ section#about .image {
 }
 section#about .image img {
   border-radius: 40px;
+}
+
+section#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 48px;
+  margin-inline: 64px;
+  box-sizing: border-box;
+}
+section#portfolio > p {
+  font-size: 32px;
+}
+section#portfolio > p i {
+  margin: 0 10px;
+}
+section#portfolio .portofolio-wrapper {
+  margin-top: 64px;
+}
+section#portfolio .portofolio-wrapper .porto-card {
+  max-width: 700px;
+  background-color: #12486b;
+  border-radius: 16px;
+  margin-bottom: 60px;
+}
+section#portfolio .portofolio-wrapper .porto-card img {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#portfolio .portofolio-wrapper .porto-card > .porto-desc {
+  padding: 24px;
+}
+section#portfolio .portofolio-wrapper .porto-card > .porto-desc .title-link {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+section#portfolio .portofolio-wrapper .porto-card > .porto-desc h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+section#portfolio .portofolio-wrapper .porto-card > .porto-desc p {
+  margin: 20px 0;
 }/*# sourceMappingURL=styles.css.map */

@@ -184,7 +184,8 @@ section#portfolio .portofolio-wrapper {
 }
 section#portfolio .portofolio-wrapper .porto-card {
   max-width: 700px;
-  background-color: #12486b;
+  background: rgb(7, 133, 80);
+  background: linear-gradient(180deg, #79ac78 0%, #12486b 100%);
   border-radius: 16px;
   margin-bottom: 60px;
 }

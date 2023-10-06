@@ -167,7 +167,6 @@ section#portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   margin-top: 120px;
   margin-bottom: 48px;
   margin-inline: 64px;
@@ -210,4 +209,36 @@ section#portfolio .portofolio-wrapper .porto-card > .porto-desc h3 {
 }
 section#portfolio .portofolio-wrapper .porto-card > .porto-desc p {
   margin: 20px 0;
+}
+section#portfolio .portofolio-wrapper .porto-card > .porto-desc .tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+section#portfolio .portofolio-wrapper .porto-card > .porto-desc .tech img {
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section#blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 48px;
+  box-sizing: border-box;
+}
+section#blog > p {
+  font-size: 36px;
+}
+section#blog > p i {
+  margin: 0 10px;
+}
+section#blog .blog-wrapper {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  max-width: 700px;
 }/*# sourceMappingURL=styles.css.map */

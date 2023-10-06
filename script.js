@@ -7,10 +7,11 @@ const porto = [
     gitLink: "https://github.com/AlgonzaDJun/Food-Corner",
     demoLink: "https://blue-bewildered-swallow.cyclic.app",
     icon: [
-      //   <DiMongodb key={1} color="green" />,
-      //   <SiExpress key={2} color="black" />,
-      //   <DiReact key={3} color="#62d4fa" />,
-      //   <DiNodejsSmall key={4} color="green" />,
+      `<i class="fa-brands fa-react fa-xl"></i>`,
+      `<i class="fa-brands fa-bootstrap fa-xl"></i>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/mongodb.png" alt="mongodb"/>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/express-js.png" alt="express-js"/>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs"/>`,
     ],
   },
   {
@@ -22,9 +23,10 @@ const porto = [
     gitLink: "https://github.com/AlgonzaDJun/J-Commerce",
     demoLink: "https://j-commerce.netlify.app",
     icon: [
-      //   <DiReact key={1} color="#62d4fa" />,
-      //   <SiMui key={2} color="#3477ea" style={{ backgroundColor: "white" }} />,
-      //   <SiRedux key={3} color="white" style={{ backgroundColor: "#764abc" }} />,
+      `<i class="fa-brands fa-react fa-xl"></i>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/redux.png" alt="redux"/>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/material-ui.png" alt="material-ui"/>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/google-firebase-console.png" alt="google-firebase-console"/>`,
     ],
   },
   {
@@ -37,23 +39,31 @@ const porto = [
     gitLink: "#",
     demoLink: "https://travel.juna.my.id",
     icon: [
-      //   <SiLaravel key={1} color="#F05340" />,
-      //   <SiMysql key={2} color="#00758f" />,
-      //   <SiJquery key={3} color="black" />,
+      `<i class="fa-brands fa-laravel fa-2xl" style="color: #ff0000;"></i>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/sass.png" alt="sass"/>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/mongodb.png" alt="mongodb"/>`,
+      `<img width="100" height="100" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Midtrans.png" alt="mongodb"/>`,
     ],
   },
   {
     id: 4,
-    title: "Todo With Chat Website",
+    title: "Todo Website With Realtime Chat Feature",
     image: "/img/projects/todo-chat.png",
     desc: "Website Todo List dengan fitur chat realtime menggunakan pusherJS",
     demoLink: "https://todo.juna.my.id",
+    icon: [
+      `<i class="fa-brands fa-laravel fa-2xl" style="color: #ff0000;"></i>`,
+      `<img width="48" height="48" src="https://avatars.githubusercontent.com/u/739550?s=200&v=4" alt="mongodb"/>`,
+      `<img width="48" height="48" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>`,
+    ],
   },
 ];
 
 let wrapper = document.getElementById("portofolio-wrapper");
 
 for (let i = 0; i < porto.length; i++) {
+  console.log(porto[i].icon);
+
   const portoCard = `
     <div class="porto-card">
           <img src="${porto[i].image}" alt="" />
@@ -68,11 +78,11 @@ for (let i = 0; i < porto.length; i++) {
               ${porto[i].desc}
             </p>
             <div class="tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
+              ${porto[i]?.icon.join(" ")}
             </div>
           </div>
         </div>`;
+
   wrapper.innerHTML += portoCard;
 }
+// ${(porto[i]?.icon).map((icon) => icon).join(" ")}

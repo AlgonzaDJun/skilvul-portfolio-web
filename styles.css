@@ -42,6 +42,7 @@ header nav .nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 24px;
 }
 header nav .nav-item a {
   padding: 24px 20px;
@@ -238,7 +239,44 @@ section#blog > p i {
 }
 section#blog .blog-wrapper {
   display: flex;
-  gap: 32px;
-  margin-top: 32px;
-  max-width: 700px;
+  justify-content: center;
+  gap: 96px;
+  margin-top: 64px;
+  flex-wrap: wrap;
+}
+section#blog .blog-wrapper > .blog-card {
+  color: black;
+  background-color: #f1efef;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  max-width: 384px;
+}
+section#blog .blog-wrapper > .blog-card img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#blog .blog-wrapper > .blog-card .title-date-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-block: 20px;
+}
+section#blog .blog-wrapper > .blog-card h3,
+section#blog .blog-wrapper > .blog-card p {
+  color: #04364a;
+}
+section#blog .blog-wrapper > .blog-card a {
+  color: #f1efef;
+}
+section#blog .blog-wrapper > .blog-card .blog-btn {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #79ac78;
+}
+section#blog .blog-wrapper > .blog-card .blog-btn:hover {
+  background-color: #618264;
 }/*# sourceMappingURL=styles.css.map */

@@ -61,10 +61,11 @@ const porto = [
 
 let wrapper = document.getElementById("portofolio-wrapper");
 
-for (let i = 0; i < porto.length; i++) {
-  console.log(porto[i].icon);
+if (wrapper) {
+  for (let i = 0; i < porto.length; i++) {
+    console.log(porto[i].icon);
 
-  const portoCard = `
+    const portoCard = `
     <div class="porto-card">
           <img src="${porto[i].image}" alt="" />
           <div class="porto-desc">
@@ -83,6 +84,22 @@ for (let i = 0; i < porto.length; i++) {
           </div>
         </div>`;
 
-  wrapper.innerHTML += portoCard;
+    wrapper.innerHTML += portoCard;
+  }
 }
 // ${(porto[i]?.icon).map((icon) => icon).join(" ")}
+
+const blogDesc = document.querySelectorAll(".blog-desc");
+const maxWords = 10;
+function countWords() {
+  const words = myElement.textContent.split(" ");
+  return words.length;
+}
+
+blogDesc.forEach((myElement) => {
+  const words = myElement.innerText.split(" ");
+  if (words.length > maxWords) {
+    myElement.textContent = words.slice(0, maxWords).join(" ") + "...";
+  }
+  console.log(words)
+});

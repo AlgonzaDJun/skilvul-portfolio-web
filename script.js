@@ -91,10 +91,7 @@ if (wrapper) {
 
 const blogDesc = document.querySelectorAll(".blog-desc");
 const maxWords = 10;
-function countWords() {
-  const words = myElement.textContent.split(" ");
-  return words.length;
-}
+
 
 blogDesc.forEach((myElement) => {
   const words = myElement.innerText.split(" ");
@@ -103,3 +100,9 @@ blogDesc.forEach((myElement) => {
   }
   console.log(words)
 });
+
+
+function countWords() {
+  const words = myElement.textContent.split(" ");
+  return words.length;
+}
